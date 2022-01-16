@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Down The Line</title>
+  <style>
+    
+   
+    
+    #output {
+    
+      font-family:fantisy;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Welcome to Down The Line!</h2>
+  <div>
+    <button>Generate a Game Word!</button>
+  </div>
+  <div>
+   
+  
+
+  <div id="output"></div>
+
+  <script>
+   
+    var btn = document.querySelector("button");
+    var out = document.getElementById("output");
+    
+  
+    btn.addEventListener("click", getWord);
+   
+    function getWord(){
+     
+      
+      var theWord= [
+      "Manipulation", "Anticipation", "Regulator", "Proposition", "Typical", "Additional", "Incredible", "Courageous", "Triumphant", "A Guppy in a Shark Tank", "Candy Crunching Coconut Lovers", "Red Roses With Thorny Stems", "Doorknobs and Doorjambs with hasps and hinges", "Two Tiny Toads ate Fat Flying Fly's", "The Funny Bunny Hid the Colored Candy in the Colored Can", "Many Maids Mopped Motels", "Dogs Dig Holes for Big Bones", "Antidisestabilishmentarianism", "All Credit Goes to Jacksepticeye", "A Funny Bunny Found a Wild Child", "Controller", "Suffocation"
+      ];
+
+      
+      var wordNum = Math.floor(Math.random() * theWord.length);
+      
+     
+      output.textContent = theWord[wordNum];
+    }
+</script>
+</body>
+</html>
+
